@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Them forest{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ theme.description }}{% endblock %}">
+    
+    <!-- Theme Styles -->
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    
+    <!-- Custom Styles -->
+    {% block styles %}{% endblock %}
+</head>
+<body class="theme-them-forest">
+    <!-- Header -->
+    <header class="theme-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="{{ url('/') }}">
+                        <img src="{{ asset('images/logo.png') }}" alt="Them forest" class="logo-img">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/products') }}">Products</a></li>
+                        <li><a href="{{ url('/about') }}">About</a></li>
+                        <li><a href="{{ url('/contact') }}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="theme-main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="theme-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Them forest</h3>
+                    <p>{{ theme.description }}</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ 'now'|date('Y') }} Them forest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Scripts -->
+    <script src="{{ asset('js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
