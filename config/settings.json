@@ -1,0 +1,19 @@
+{
+    "colors": {
+        "primary": "#3B82F6",
+        "secondary": "#6B7280",
+        "accent": "#F59E0B",
+        "background": "#FFFFFF",
+        "text": "#1F2937"
+    },
+    "typography": {
+        "font_family": "Inter, sans-serif",
+        "font_size_base": "16px",
+        "line_height": "1.6"
+    },
+    "layout": {
+        "container_width": "1200px",
+        "sidebar_width": "300px",
+        "header_height": "80px"
+    }
+}
