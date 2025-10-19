@@ -1,0 +1,41 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Them forest - Home{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Them forest</h1>
+            <p class="hero-description">{{ theme.description }}</p>
+            <div class="hero-actions">
+                <a href="{{ url('/products') }}" class="btn btn-primary">Explore Products</a>
+                <a href="{{ url('/about') }}" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <h2 class="section-title">Why Choose Them forest?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Fast Performance</h3>
+                <p>Optimized for speed and performance across all devices.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Ready</h3>
+                <p>Fully responsive design that works perfectly on all screen sizes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Customizable</h3>
+                <p>Easy to customize colors, fonts, and layout to match your brand.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
